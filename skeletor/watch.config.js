@@ -8,24 +8,12 @@ module.exports = {
 					{
 						name: 'css',
 						paths: 'source/css/**/*.css',
-						events: ['add', 'change', 'delete'],
-						tasks: [
-							{
-								name: 'build',
-								subTasks: ['css']
-							}
-						]
+						events: ['add', 'change', 'delete']
 					},
 					{
 						name: 'static',
 						paths: ['source/fonts/**/*', 'source/images/**/*'],
-						events: ['add', 'change', 'delete'],
-						tasks: [
-							{
-								name: 'build',
-								subTasks: ['static']
-							}
-						]
+						events: ['add', 'change', 'delete']
 					}
 				]
 			}
