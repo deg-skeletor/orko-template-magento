@@ -1,13 +1,6 @@
 module.exports = {
 	tasks: [
 		{
-			name: 'build',
-			subTasks: [
-				require('./skeletor/build/css.config.js'),
-				require('./skeletor/build/static.config.js')
-			]
-		},
-		{
 			name: 'export',
 			environment: 'production',
 			subTasks: [
