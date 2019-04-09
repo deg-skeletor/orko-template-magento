@@ -1,5 +1,5 @@
 const {files, plugins} = require('../common/css.config.js');
-const outputDir = 'export';
+const outputDir = '../app/design/frontend/vendor/theme/web';
 
 module.exports = {
     name: 'css',

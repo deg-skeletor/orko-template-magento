@@ -11,30 +11,8 @@ module.exports = {
 						events: ['add', 'change', 'delete'],
 						tasks: [
 							{
-								name: 'build',
+								name: 'export',
 								subTasks: ['css']
-							}
-						]
-					},
-					{
-						name: 'js',
-						paths: 'source/js/**/*.js',
-						events: ['add', 'change', 'delete'],
-						tasks: [
-							{
-								name: 'build',
-								subTasks: ['js']
-							}
-						]
-					},
-					{
-						name: 'patterns',
-						paths: ['source/_patterns/**/*','source/_data/**/*','source/_meta/**/*','source/_annotations/**/*'],
-						events: ['add', 'change', 'delete'],
-						tasks: [
-							{
-								name: 'build',
-								subTasks: ['patterns']
 							}
 						]
 					},
@@ -44,7 +22,7 @@ module.exports = {
 						events: ['add', 'change', 'delete'],
 						tasks: [
 							{
-								name: 'build',
+								name: 'export',
 								subTasks: ['static']
 							}
 						]
